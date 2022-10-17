@@ -50,7 +50,10 @@ function validationSignup(){
             email : emailInput.value,
             password : passwordInput.value
         }
-        postApi(data, 'signup');
+        const message = postApi(data, 'signup');
+        if (message == "Success Add") {
+            location.assign("index.html")
+        }
     }
 }
 function validationSignin(){
@@ -74,7 +77,14 @@ function validationSignin(){
             email : emailInput.value,
             password : passwordInput.value
         }
-        postApi(data, 'signin');
+        const message = postApi(data, 'signin');
+        if (message == "welcome") {
+            console.log('welcome');
+        }else if (message = "password incorrect") {
+            errorPassword.classList.contains('d-none') ?  '' : errorPassword.classList.add('d-none');
+        }else if (message = "Dont Exist Email") {
+            errorEmail.classList.contains('d-none') ?  '' : errorEmail.classList.add('d-none');
+        }
     }
 }
 
@@ -87,11 +97,7 @@ async function  postApi(data, endPoint) {
         }
     });
     console.log(JSON.stringify(data));
-    const {message} = await response.json()
-    console.log(message);
-    if (message == "Success Add") {
-        location.assign("index.html")
-    }
+    return {message} = await response.json();
 }
 
 
