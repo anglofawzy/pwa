@@ -6,7 +6,7 @@ self.addEventListener('install', (e) => {
       '/pwa/js/main.js',
       '/pwa/css/style.css',
       '/pwa/css/media.css'
-    ]))
+    ])),
   );
 });
 
