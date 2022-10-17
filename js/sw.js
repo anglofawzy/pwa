@@ -1,7 +1,6 @@
 self.addEventListener('install', (e) => {
   e.waitUntil(
     caches.open('enter app').then((cache) => cache.addAll([
-      '/pwa',
       '/pwa/index.html',
       '/pwa/signUp.html',
       '/pwa/js/main.js',
