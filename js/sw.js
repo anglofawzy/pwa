@@ -3,7 +3,7 @@ self.addEventListener('install', (e) => {
     caches.open('fox-store').then((cache) => cache.addAll([
       '/pwa/index.html',
       '/pwa/signUp.html',
-      '/pwa/main.js',
+      '/pwa/js/main.js',
       '/pwa/css/style.css',
       '/pwa/css/media.css'
     ])),
