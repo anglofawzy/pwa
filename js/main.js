@@ -94,16 +94,6 @@ async function  postApi(data, endPoint) {
     }
 }
 
-if(regexEmail.test(emailInput.value) && regexPassword.test(passwordInput.value)){
-    values = {
-        email : emailInput.value,
-        password : passwordInput.value
-    }
-    postApi(values,'singin');
-}
-
-// const pwa = document.querySelector("")
-
 
 // Register service worker to control making site work offline
 
@@ -116,7 +106,7 @@ if ('serviceWorker' in navigator) {
   // Code to handle install prompt on desktop
   
 let deferredPrompt;
-const addBtn = document.querySelector('#PWA');
+const addBtn = document.querySelector('#pwa');
 // addBtn.style.display = 'none';
   
 window.addEventListener('beforeinstallprompt', (e) => {
