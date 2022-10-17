@@ -105,7 +105,7 @@ async function  postApi(data, endPoint) {
 
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker
-  .register('pwa/js/sw.js')
+  .register('/pwa/js/sw.js')
   .then(() => { console.log('Service Worker Registered'); });
 }
   
