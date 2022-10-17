@@ -16,7 +16,7 @@ signinBtn?.addEventListener('click', () => {
     validationSignin()
 })
 
-function validationSignup(){
+async function validationSignup(){
     const errorUsername = document.querySelector('.error-username')
     const regexUsername = /^[a-z|A-Z]/;
     
@@ -50,13 +50,13 @@ function validationSignup(){
             email : emailInput.value,
             password : passwordInput.value
         }
-        const message = postApi(data, 'signup');
+        const {message} = await postApi(data, 'signup');
         if (message == "Success Add") {
             location.assign("index.html")
         }
     }
 }
-function validationSignin(){
+async function validationSignin(){
     if (regexEmail.test(emailInput.value) == false) {
         errorEmail.classList.remove("d-none") ? errorEmail.classList.add("d-none") : ''
         
@@ -77,13 +77,13 @@ function validationSignin(){
             email : emailInput.value,
             password : passwordInput.value
         }
-        const message = postApi(data, 'signin');
+        const {message} = await postApi(data, 'signin');
+        console.log(message);
         if (message == "welcome") {
-            console.log('welcome');
-        }else if (message = "password incorrect") {
-            errorPassword.classList.contains('d-none') ?  '' : errorPassword.classList.add('d-none');
-        }else if (message = "Dont Exist Email") {
-            errorEmail.classList.contains('d-none') ?  '' : errorEmail.classList.add('d-none');
+        }else if (message == "password incorrect") {
+            errorPassword.classList.contains('d-none') ?  errorPassword.classList.remove('d-none') : '';
+        }else if (message =="Dont Exist Email") {
+            errorEmail.classList.contains('d-none') ?  errorEmail.classList.remove('d-none')  : '';
         }
     }
 }
@@ -97,7 +97,7 @@ async function  postApi(data, endPoint) {
         }
     });
     console.log(JSON.stringify(data));
-    return {message} = await response.json();
+    return await response.json();
 }
 
 
