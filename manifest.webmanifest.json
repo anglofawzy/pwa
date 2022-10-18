@@ -2,6 +2,7 @@
   "background_color": "purple",
   "description": "PWA",
   "display": "fullscreen",
+  "theme_color": "#B12A34",
   "icons": [
     {
       "src": "icon/fox-icon.png",
@@ -11,6 +12,6 @@
   ],
   "name": "Awesome fox ",
   "short_name": "Foxes",
-  "start_url": "/pwa/index.html",
+  "start_url": "https://anglofawzy.github.io/pwa/",
   "prefer_related_applications" : false
 }
