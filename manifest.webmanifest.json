@@ -12,6 +12,6 @@
   ],
   "name": "Awesome fox ",
   "short_name": "Foxes",
-  "start_url": "https://anglofawzy.github.io/pwa/",
+  "start_url": "/pwa/",
   "prefer_related_applications" : false
 }
