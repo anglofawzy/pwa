@@ -124,7 +124,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
     addBtn.style.display = 'block';
     // Optionally, send analytics event that PWA install promo was shown.
     console.log(`'beforeinstallprompt' event was fired.`);
-    
+
     addBtn.addEventListener('click', () => {
         // hide our user interface that shows our A2HS button
         addBtn.style.display = 'none';
