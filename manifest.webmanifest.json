@@ -11,5 +11,6 @@
   ],
   "name": "Awesome fox ",
   "short_name": "Foxes",
-  "start_url": "/pwa/index.html"
+  "start_url": "/pwa/index.html",
+  "prefer_related_applications" : false
 }
