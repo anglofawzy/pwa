@@ -8,7 +8,8 @@ self.addEventListener('install', (e) => {
       '/pwa/js/particles.min.js',
       '/pwa/css/style.css',
       '/pwa/css/media.css',
-      '/pwa/assets/particles.json'
+      '/pwa/assets/particles.json',
+      '/pwa/icon/fox-icon.png',
     ])),
   );
 });
