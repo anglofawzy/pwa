@@ -10,6 +10,7 @@ self.addEventListener('install', (e) => {
       '/pwa/css/media.css',
       '/pwa/assets/particles.json',
       '/pwa/icon/fox-icon.png',
+      '/pwa/manifest.webmanifest.json',
     ])),
   );
 });
