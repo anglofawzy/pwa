@@ -1,4 +1,15 @@
-@media screen and (min-width : 200px) and (max-width : 1200px){
+@media screen and (min-width : 1201px) and (max-width : 1400px){
+    .from
+    {
+        display: block;
+        width: 100%;
+    }
+    .form li input
+    {
+        width: 40%;
+    }
+}
+@media screen and (min-width : 601px) and (max-width : 1200px){
     .from
     {
         display: block;
@@ -7,5 +18,17 @@
     .form li input
     {
         width: 50%;
+    }
+}
+
+@media screen and (min-width : 0px) and (max-width : 600px){
+    .from
+    {
+        display: block;
+        width: 100%;
+    }
+    .form li input
+    {
+        width: 80%;
     }
 }
