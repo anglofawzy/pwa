@@ -104,8 +104,7 @@ async function  postApi(data, endPoint) {
 // Register service worker to control making site work offline
 
 if ('serviceWorker' in navigator) {
-        navigator.serviceWorker
-  .register('/pwa/js/sw.js').then(() => {console.log('test service');})    
+        navigator.serviceWorker.register('/pwa/sw.js').then(() => {console.log('test service');})    
 }
   
   // Code to handle install prompt on desktop
