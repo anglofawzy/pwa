@@ -9,6 +9,8 @@ self.addEventListener('install', (e) => {
       '/pwa/css/media.css',
       '/pwa/icon/fox-icon.png',
       '/pwa/manifest.webmanifest.json',
+      '/pwa/js/app.js',
+      '/pwa/js/particles.min.js'
     ])),
   );
 });
