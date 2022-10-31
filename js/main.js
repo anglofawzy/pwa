@@ -140,6 +140,4 @@ if ('serviceWorker' in navigator) {
 //           deferredPrompt = null;
 //         });
 //       });
-  
-    
 // });
