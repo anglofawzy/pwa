@@ -1,6 +1,6 @@
 {
   "background_color": "purple",
-  "description": "PWA",
+  "description": "Progressive Web App",
   "display": "fullscreen",
   "theme_color": "#B12A34",
   "icons": [
@@ -12,6 +12,5 @@
   ],
   "name": "Awesome fox ",
   "short_name": "Foxes",
-  "start_url": "/pwa/",
-  "prefer_related_applications" : false
+  "start_url": "/pwa/index.html"
 }
